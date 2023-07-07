@@ -117,12 +117,14 @@
     flex-direction: column;
     justify-content: space-evenly;
   }
-  .about button {
+  .about a {
+    text-decoration: none;
     width: 30%;
     text-align: center;
     padding: 10px 10px;
     border-style: none;
     font-size: 14px;
+    color: white;
     background-color: rgb(99, 224, 162);
   }
   .services {
