@@ -279,12 +279,15 @@
   .getintouch {
     background-color: rgba(0, 0, 0, 0.863);
   }
+  .getintouch .bottom {
+    display: flex;
+  }
   .getintouch h2 {
     color: white;
-    font-size: 30px;
+    font-size: 36px;
     text-align: center;
     text-decoration: underline;
-    padding: 20px;
+    padding: 10px;
   }
   .getintouch h2 em {
     color: rgb(99, 224, 162);
@@ -293,6 +296,7 @@
   .getintouch p {
     color: white;
     font-size: 12px;
+    margin: auto;
   }
   .getintouch .paragraph {
     width: 280px;
@@ -305,8 +309,10 @@
     flex-direction: column;
     height: 100px;
     background-color: rgb(81, 79, 79);
-    width: 40%;
+    width: 23%;
     border-radius: 5px;
+    margin: auto;
+    margin-top: 10px;
   }
   .getintouch .contacts img {
     height: 20px;
@@ -324,14 +330,23 @@
   .getintouch .contact-holder {
     display: flex;
     padding: 20px;
+    margin-left: 15px;
   }
   .getintouch .contact-holder p {
-    margin-left: 20px;
-    line-height: 0.1;
+    margin-left: 30px;
+    line-height: 1;
   }
   .getintouch .mail {
     display: flex;
     margin-right: 30px;
+    margin-bottom: 10px;
+  }
+  .getintouch .mail p {
+    margin-right: 10px;
+  }
+  .getintouch .btn {
+    background-color: rgb(81, 79, 79);
+    border: none;
   }
   .getintouch hr {
     border: none;
@@ -346,12 +361,14 @@
     display: flex;
     justify-content: space-between;
     max-width: 200px;
+    margin: auto;
   }
   .getintouch .icons img {
     height: 20px;
     -o-object-fit: contain;
        object-fit: contain;
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-left: 5px;
   }
   .getintouch .icons img:hover {
     transition: 250ms ease;

@@ -337,13 +337,16 @@
   .getintouch {
     background-color: rgba(0, 0, 0, 0.863);
 
-
+.bottom{
+  display: flex;
+ 
+}
     h2 {
       color: white;
-      font-size: 30px;
+      font-size: 36px;
       text-align: center;
       text-decoration: underline;
-      padding: 20px;
+      padding: 10px;
 
       em {
         color: rgb(99, 224, 162);
@@ -355,6 +358,7 @@
     p {
       color: white;
       font-size: 12px;
+      margin: auto;
 
 
 
@@ -373,8 +377,10 @@
       flex-direction: column;
       height: 100px;
       background-color: rgb(81, 79, 79);
-      width: 40%;
+      width: 23%;
       border-radius: 5px;
+      margin: auto;
+      margin-top: 10px;
 
 
       img {
@@ -405,16 +411,26 @@
     .contact-holder {
       display: flex;
       padding: 20px;
+      margin-left: 15px;
 
       p {
-        margin-left: 20px;
-        line-height: 0.1;
+        margin-left: 30px;
+        line-height: 1.0;
       }
     }
 
     .mail {
       display: flex;
       margin-right: 30px;
+      margin-bottom: 10px;
+      p{
+        margin-right: 10px;
+      }
+    }
+    .btn{
+      background-color:  rgb(81, 79, 79);
+      border: none;
+      
     }
 
     hr {
@@ -431,11 +447,13 @@
       display: flex;
       justify-content: space-between;
       max-width: 200px;
+      margin: auto;
 
       img {
         height: 20px;
         object-fit: contain;
-        margin-top: 10px;
+        margin-top: 5px;
+        margin-left: 5px;
 
         &:hover {
           transition: 250ms ease;
