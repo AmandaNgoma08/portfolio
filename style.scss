@@ -24,6 +24,7 @@
     width: 100%;
     height: auto;
     position: absolute;
+    z-index: 2;
 
     .header-inner {
       display: flex;
@@ -61,19 +62,17 @@
   }
 
   .banner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: url("./img/pexels-designecologist-1779487\ \(1\).jpg") no-repeat;
+   // background: url("./img/pexels-designecologist-1779487\ \(1\).jpg") no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 95vh;
+    height: 90vh;
     background-color: rgba(11, 13, 13, 0.279);
     background-blend-mode: overlay;
 
     img {
       width: 100%;
+      object-fit: cover;
     }
 
     .heading {
@@ -88,6 +87,24 @@
         color: white;
         font-size: 44px;
       }
+    }
+    .slick-content{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      img{
+        height: 90vh;
+      }
+    }
+    .foreground{
+      background-color: rgba(0, 0, 0, 0.45);
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+      height: 100%;
+      display: flex;
+    align-items: center;
+    justify-content: center;
     }
   }
 
@@ -297,6 +314,8 @@
     }
 
     .left {
+      max-height: 505px;
+      overflow-y: auto;
       display: flex;
       justify-content: space-evenly;
       flex-direction: row;
@@ -310,6 +329,7 @@
     }
 
     .right {
+      
       .my-card {
         width: 100%;
         height: 460px;
@@ -336,6 +356,7 @@
 
   .getintouch {
     background-color: rgba(0, 0, 0, 0.863);
+    position: relative;
 
 .bottom{
   display: flex;
@@ -365,7 +386,7 @@
     }
 
     .paragraph {
-      width: 280px;
+      width: 400px;
     }
 
     img {
@@ -375,7 +396,7 @@
     .contacts {
       display: flex;
       flex-direction: column;
-      height: 100px;
+     // height: 100px;
       background-color: rgb(81, 79, 79);
       width: 23%;
       border-radius: 5px;
@@ -427,9 +448,23 @@
         margin-right: 10px;
       }
     }
-    .btn{
-      background-color:  rgb(81, 79, 79);
+    .contact-btn{
+      display: flex;
+      justify-content: space-between;
+      background-color: rgb(99, 224, 162);
       border: none;
+      padding: 15px;
+      text-align: center;
+      span{
+        width: 80%;
+      }
+      img{
+        width: 60px;
+        animation: shake 2s ease infinite ;
+      }
+
+     
+
       
     }
 
@@ -498,6 +533,23 @@
       background-color: #000 !important;
       color: #fff !important;
     }
+  }
+}
+@keyframes shake{
+  0%{
+    transform: rotate(0deg) scale(1);
+  }
+  5%{
+transform: rotate(15deg) scale(.9);
+  }
+  10%{
+transform: rotate(0deg) scale(1);
+  }
+  15%{
+transform: rotate(-15deg) scale(1.1);
+  }
+  20%{
+transform: rotate(0deg) scale(1);
   }
 }
 

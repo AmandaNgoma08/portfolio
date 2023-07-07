@@ -1,14 +1,18 @@
 
-// $(document).on('ready', function() {
-//     $(".background").slick({
-//       dots: false,
-//       slidesToShow: 1,
-//       slidesToScroll: 1,
-//       arrow:false,
-//       fade:true,
-//     });
+$(document).on('ready', function() {
+    $(".background").slick({
+      dots: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrow:false,
+      fade:true,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      cssEase: 'ease-in' 
 
-// })
+    });
+
+})
 const projectContainer = document.querySelector('.project-container')
 const activeImage = document.querySelector('.active-image')
 const projects = document.querySelectorAll('.projects')

@@ -9,7 +9,7 @@ const  print = (x)=>console.log(x)
 for (let i = 1; i < items.length; i++) {
     // display all items in items array
     const item = items[i]
-    item.onmouseover= ()=>{
+    item.onclick= ()=>{
         const itemid=item.getAttribute('id')
         const itemimg = document.querySelector(`#${itemid} img`)
         print (itemimg)
